@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body style="background-color: #F4E9FE;">
+
+<div style="padding-left:20px; background-color:#e6ccff; line-height:2.6">
+  <center><h3 style="font-family: Lucida Console, Courier, monospace;">Determine Metacentric Height of a Ship Model</h3></center>
+</div>
+
+<section id="first">
+<div class="center-div" data-tooltip="Click to close the drain Pipe">
+		<h4 align="center" class="effect typewriter" style="font-weight:normal; font-family: Lucida Console, Courier, monospace; background-color:#AED6F1; line-height:2.0"><strong>Step:1</strong> Close the Drain Pipe & Open the Inlet Pipe so that the <br> container gets filled with water</h4>
+		<a onclick="myFunction()"><img class="arr" id="arrow" src="img/arr.png"/></a>
+		<img class="knob" id="knob" src="img/app.png" height="360px" width="270px"/> 
+		<div class="close">
+		<img align="right" id="image" src="img/knob.png"/>
+		</div>
+		<center><div class="line"></div></center>
+		<div id="message1" class="messagedrain" style="font-family: Trebuchet MS, Helvetica, sans-serif;" align="right">
+		<p class="typewriter">Drain Pipe is Open</p>
+		</div>
+		
+		
+		<div id="step2" style="display: none;float:right; position: absolute; ">
+		<a class="btndisclaimer" onclick="secondpage()" ><img src="img/next.png"/></a>
+		</div>
+		<div class="footer"><h4 style="margin-top:90px;font-weight:normal;color: black; font-size:18px; font-family: Trebuchet MS, Helvetica, sans-serif;">This step is just to close the drain pipe so that when the water gets filled in the container through the inlet pipe does'nt gets drained through the drain pipe.</h4></div>
+	</div><br><br>
+</section>
+
+<section id="second"  style="display: none;">
+	<div class="center-div" data-tooltip="Click to Open the Inlet Pipe">
+		<h4 align="center" class="typewriter" style="font-weight:normal; font-family: Lucida Console, Courier, monospace; background-color:#AED6F1; line-height:2.0"><strong>Step:2</strong> Open the Inlet Pipe so that the container gets filled with water. Make the sure that <br>the container must contain water atleast 3/4 of container.</h4>
+		<img class="knob2" style="" id="knob" src="img/app2.jpeg" height="360px" width="270px"/> 
+		<a onclick="myFunction2()"><img class="arr2" id="arrow2" src="img/arr2.png"/></a>
+		<div class="close2">
+		<img align="right" id="imag" src="img/knob.png"/>
+		</div>
+		<center><div class="line2"></div></center>
+		<div  class="messagedrain" id="message2" style="font-family: Trebuchet MS, Helvetica, sans-serif;" align="right" >
+		<p class="typewriter">Inlet Pipe is Closed</p>
+		</div>
+		
+		<div id="step3" style="display:none;; float:right; position: absolute; ">
+		<a class="btndisclaimer" onclick="thirdpage()"><img src="img/next.png"/></a>
+		</div>
+		<footer class="footer"><h4 style="margin-top:70px ;font-weight:normal;text-align:center;color: black; font-size:18px; font-family: Trebuchet MS, Helvetica, sans-serif;">This step is to open the Inlet Pipe to fill the water 3/4 inside the container so as to proceed the Experiment.</h4></footer>
+	</div>
+</section>
+
+<section id="third"  style="display: none;">
+	<div class="center-div" data-tooltip="Click to Put the Weights">
+		<h4 align="center" class="typewriter"  style="font-weight:normal; font-family: Lucida Console, Courier, monospace;background-color:#AED6F1; line-height:2.0"><strong>Step:3</strong> Put the Weights on the Ship on any side. These weights will tilt <br> the ship & in a specific direction by giving an angle to the Compass</h4>
+		<img class="knob" style="margin-left:36px;" id="knob" src="img/app3.png" height="360px" width="270px"/> 
+		<a style="display:block;" onclick="myFunction3()"><img class="arr3" id="arrow3" src="img/arr2.png"/></a>
+		<div class="close">
+		<img align="right" id="imag3" style="margin-top:50px;" src="img/shipwl.png"/>
+		</div>
+		<center><div class="line"></div></center>
+		<div  class="messagedrain" id="message3" style="font-family: Trebuchet MS, Helvetica, sans-serif;" align="right" >
+		<p class="typewriter">Put the Weights!</p>
+		</div>
+		
+		<div id="step4" style="display:none; float:right; position: absolute; ">
+		<a class="btndisclaimer" onclick="fourthpage()" ><img src="img/next.png"/></a>
+		</div>
+		
+		<footer class="footer"><h4 style="margin-top:90px ;font-weight:normal;color: black; font-size:18px; font-family: Trebuchet MS, Helvetica, sans-serif;">This step is to put the weights on the Left or Right side of the ship to get an Angle.</h4></footer>
+	</div>
+</section>
+
+<section id="four"  style="display: none;">
+	<div class="center-div" data-tooltip="Click to know the Angle">
+		<h4 align="center" class="typewriter"  style="font-weight:normal; font-family: Lucida Console, Courier, monospace;background-color:#AED6F1; line-height:2.0"><strong>Step:4</strong> After putting the weights, the Ship gets tilted in one direction giving a <br> certain Angle to the compass fixed at the center of the ship.</h4>
+		<img class="knob" style="margin-left:36px;" id="knob" src="img/app4.png" height="360px" width="270px"/> 
+		<a style="display:block;" onclick="myFunction4()"><img class="arr3" id="arrow4" src="img/arr2.png"/></a>
+		<div class="close">
+		<img align="right" id="imag4" style="margin-top:50px;" src="img/shiptilt.png"/>
+		</div>
+		<center><div class="line"></div></center>
+		<div  class="messagedrain" id="message4" style="font-family: Trebuchet MS, Helvetica, sans-serif;" align="right" >
+		<p class="typewriter">The Ship is Tilted<br>giving an angle</p>
+		</div>
+		
+		<div id="step5" style="display:none; float:right; position: absolute; ">
+		<a class="btndisclaimer" onclick="fifthpage()"><img src="img/next.png"/></a>
+		</div>
+		
+		<footer class="footer"><h4 style="margin-top:90px ;font-weight:normal;color: black; font-size:18px; font-family: Trebuchet MS, Helvetica, sans-serif;">Note down the Angle that the ship gives you after putting the weights on the Ship.</h4></footer>
+	</div>
+</section>
+
+<section id="five"  style="display: none;">
+	<div class="center-div" data-tooltip="Click to know the Angle">
+		<h4 align="center" class="typewriter" style="font-weight:normal; font-family: Lucida Console, Courier, monospace;background-color:#AED6F1; line-height:2.0"><strong>Step:5</strong> Now,after getting a particular angle, Note down the Distance between <br> the Weights & the Compass of the Ship located at the center.</h4>
+		<img class="knob" style="margin-left:36px;" id="knob" src="img/app4.png" height="360px" width="270px"/> 
+		<a style="display:block;" onclick="myFunction5()"><img class="arr3" id="arrow5" src="img/arr2.png"/></a>
+		<div class="close">
+		<img align="right" id="imag5" style="margin-top:50px;" src="img/shiptilt.png"/>
+		</div>
+		<center><div class="line"></div></center><br>
+		<div  class="messagedrain" id="message5" style="font-family: Trebuchet MS, Helvetica, sans-serif;" align="right" >
+		<p class="typewriter">The Ship is Tilted<br>giving an angle</p>
+		</div>
+		
+		<div id="step6" style="display:none; float:right; position: absolute; ">
+		<a class="btndisclaimer" onclick="sixthpage()"><img src="img/next.png"/></a>
+		</div>
+		
+		<footer class="footer"><h4 style="margin-top:90px ;font-weight:normal;color: black; font-size:18px; font-family: Trebuchet MS, Helvetica, sans-serif;">Note down the Distance between the Compass & Weights, this distance will be used in the calculation of Metacentric Height.</h4></footer>
+	</div>
+</section>
+
+<section id="six" style="display:none">
+	<div class="center-div">
+		<h4 align="center" class="typewriter"  style="font-weight:normal; font-family: Lucida Console, Courier, monospace; text-align:center; background-color:#AED6F1; line-height:2.0"><strong>Step:6</strong> Observation Readings</h4>
+		<h4 align="center" style="font-weight:normal; font-family: Lucida Console, Courier, monospace; text-align:center"><strong>*STANDARD DATA*</strong></h4>
+		<h5 align="center" style="font-weight:normal; font-family: Lucida Console, Courier, monospace; text-align:center; line-height:1.6"><strong></strong>
+		- Weight of Ship Model = 5.600 Kg<br>
+		- Weight of Big strip = 2.640 Kg<br>
+		- Weight of Small strip = 1.110 Kg<br>
+		- Weight of Big Hanger = 0.144 Kg<br>
+		<strong>w</strong> = Weight of Hanger + Applied Weight<br>
+		<strong>W</strong> = Weight of Ship Model + Weight of Big strip + Weight of Small strip + Weight of Hanger
+		</h5>
+		<form style="padding-left:35px; padding-right:35px;">
+    <div class="row">
+      <div class="col-25">
+        <label for="w1" style="font-family: Lucida Console, Courier, monospace;">Applied Weights:</label>
+      </div>
+      <div class="col-75">
+        <select id="w1" name="w1" onchange="list(this.options[this.selectedIndex].value);">
+			<option value="">Choose One</option>
+			<option value="491">491 gm</option>
+			<option value="500">500 gm</option>
+			<option value="995">995 gm</option>
+		</select>
+      </div>
+	</div>  
+	
+	<div class="row">
+	  <div class="col-25">
+        <label for="d1" style="font-family: Lucida Console, Courier, monospace;">Distance(x):</label>
+      </div>
+	  <div class="col-75">
+		   <select id="d1" name="d1" onchange="list1(this.options[this.selectedIndex].value);">
+			<option value="">No Data</option>
+		   </select>
+	  </div>
+	</div> 
+	
+	<div class="row">
+	  <div class="col-25">
+        <label for="a1" style="font-family: Lucida Console, Courier, monospace;">Angle (&theta;):</label>
+      </div>	
+	  <div class="col-75">
+	   <select id="a1" name="a1" onchange="value2(this.options[this.selectedIndex].value);">
+		<option value="">No Data</option>
+	   </select>
+      </div>
+    </div>
+    <div class="row">
+	     <h4 align="right" id="summation" class="ah"></h4>
+		 </div>
+  </form>
+		<div id="step7" style="display:block; float:right; position: absolute; ">
+		<a class="btndisclaimer2" onclick="seventhpage()"><img src="img/next.png"/></a>
+		</div>
+	</div>
+</section>
+
+<section id="seven" style="display:none">
+	<div class="center-div">
+		<h4 align="center" class="typewriter" style="font-weight:normal; font-family: Lucida Console, Courier, monospace; text-align:center; background-color:#AED6F1; line-height:2.0"><strong>Step:7</strong> Observation Readings</h4>
+		<h4 align="center" style="font-weight:normal; font-family: Lucida Console, Courier, monospace; text-align:center"><strong>*Data Table*</strong></h4>
+		<div style="overflow-x:auto;">
+  <table style="padding:20px;">
+    <tr>
+      <th>External Weight (gm)</th>
+	  <th>w(Kg)</th>
+	  <th>W(Kg)</th>
+      <th>Distance(x)(cm)</th>
+      <th>Angle</th>
+      <th>Metacentric Height(cm)</th>
+    </tr>
+    <tr>
+      <td id="data1"></td>
+      <td id="data9"></td>
+      <td id="data10"></td>
+      <td id="data2"></td>
+      <td id="data3"></td>
+      <td id="data4"></td>
+    </tr>
+  </table>
+</div>
+	</div>
+</section>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
